@@ -1,0 +1,149 @@
+#card {
+  margin-top: 30px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 19px;
+}
+
+#title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 25px;
+  padding-top: 10px;
+}
+
+#dashboard {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 0px;
+  margin-right: 1rem;
+}
+
+.accordion {
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  left: 33%;
+  width: 35%;
+}
+
+#add-edit {
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #2EC4B6, #84fff3);
+    background-color: rgb(61, 61, 61) !important;
+    color: #FFF;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #FFF  !important;
+    background-color: #2EC4B6 !important;
+}
+
+.accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active  {
+    color:#000000 !important;
+    text-decoration: none !important;
+    border: hidden !important;
+    border-color: #000000 !important;
+    box-shadow: 0px !important;  
+}
+  
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #FFF !important;
+    outline: 0;
+    box-shadow: 0 0 0 .15rem #FFF !important;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;    
+    text-align: center;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #2EC4B6;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(212, 209, 209);
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  @media screen and (min-width:820px) and (max-width:1350px){
+      #test{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .test12{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
+  @media screen and (min-width:1351px) and (max-width:1400px){
+      #test{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .test12{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
+

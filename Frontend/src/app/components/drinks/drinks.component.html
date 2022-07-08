@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-xl-4 col-md-12">
+      <div id="card">
+        <div id="title">Beers</div>
+        <div>
+          <div *ngFor="let d of drinks">
+            <app-beers [beers]="d"></app-beers>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-xl-4 col-md-12">
+      <div id="card">
+        <div id="title">Cocktails</div>
+          <div>
+          <div *ngFor="let d of drinks">
+            <app-cocktails [cocktails]="d"></app-cocktails>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-xl-4 col-md-12">
+      <div id="card">
+        <div id="title">Wines</div>
+        <div>
+          <div *ngFor="let d of drinks">
+            <app-wines [wines]="d"></app-wines>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+

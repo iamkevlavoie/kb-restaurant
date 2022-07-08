@@ -1,0 +1,36 @@
+<h1 class="success">Leave a Review</h1>
+<form [formGroup]="ReviewForm">
+
+        <!-- Name Input -->
+    <div class="form-group">
+        <input matInput type="text" class="form-control" id="name" placeholder="Name" formControlName="name">
+    </div>
+        <!-- Name Error -->
+    <div class="alert alert-danger" *ngIf="name?.invalid && name?.touched">
+        <div *ngIf="name?.errors?.['required']">Name is Required</div>
+    </div>
+
+        <!-- Email Input -->
+    <div class="form-group">     
+        <input matInput type="text" class="form-control" id="comment" placeholder="Comment" formControlName="comment">
+    </div>
+        <!-- Email Error -->
+    <div class="alert alert-danger" *ngIf="comment?.invalid && comment?.touched">
+        <div *ngIf="comment?.errors?.['required']">Comment is Required</div>
+    </div>
+
+        <!-- Star Rating Input -->
+    <div>
+        <star-rating [rating]="starRating" (ratingUpdated)="onRatingChanged($event)"></star-rating>
+    </div>
+   
+       <!-- Button -->
+    <button type="submit" class="button" [disabled]="ReviewForm.invalid" (click)="addReview()">Submit</button>
+
+</form>
+
+<div class="container">
+    <div *ngFor="let r of (review | slice:review.length -4)">
+        <app-reviews [reviews]="r"></app-reviews>
+    </div>
+</div>

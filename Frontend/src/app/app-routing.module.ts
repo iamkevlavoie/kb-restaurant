@@ -15,6 +15,7 @@ import { EditOfferComponent } from './components/edit-offer/edit-offer.component
 import { FoodComponent } from './components/food/food.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { NavlinkreviewComponent } from './components/navlinkreview/navlinkreview.component';
 import { OffersComponent } from './components/offers/offers.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ReviewComponent } from './components/review/review.component';
@@ -43,6 +44,7 @@ const routes: Routes = [
   {path: 'food/:id', component: EditFoodComponent, canActivate: [AuthguardService]},
   {path: 'drink/:id', component: EditDrinkComponent, canActivate: [AuthguardService]},
   {path: 'promo/:id', component: EditOfferComponent, canActivate: [AuthguardService]},
+  {path: 'reviews', component: NavlinkreviewComponent},
 ];
 
 @NgModule({

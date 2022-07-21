@@ -48,6 +48,7 @@ import { DashboardBeersComponent } from './components/dashboard-beers/dashboard-
 import { DashboardCocktailsComponent } from './components/dashboard-cocktails/dashboard-cocktails.component';
 import { DashboardWinesComponent } from './components/dashboard-wines/dashboard-wines.component';
 import { DashboardOfferComponent } from './components/dashboard-offer/dashboard-offer.component';
+import { NavlinkreviewComponent } from './components/navlinkreview/navlinkreview.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +90,7 @@ import { DashboardOfferComponent } from './components/dashboard-offer/dashboard-
     DashboardCocktailsComponent,
     DashboardWinesComponent,
     DashboardOfferComponent,
+    NavlinkreviewComponent,
   ],
   imports: [
     BrowserModule,
